@@ -12,7 +12,7 @@ export default function App() {
  useEffect(() => {
     axios.get('https://api.github.com/users/euFilpeSilva/repos')
       .then(response => {
-        setRepositories(response.data);
+        setRepositories(response.data)
       })
  }, [])
 
