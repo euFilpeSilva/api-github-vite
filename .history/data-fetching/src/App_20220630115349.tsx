@@ -6,7 +6,7 @@ type Repository = {
 }
 
 export default function App() {
- const [repositories, setRepositories] = useState <Repository[]>([]);
+ const [repositories, setRepositories] = useState([]);
 
  useEffect(() => {
     fetch('https://api.github.com/users/euFilpeSilva/repos')
@@ -17,17 +17,10 @@ export default function App() {
  }, [])
 
  return (
-    <ul>
-      {repositories.map(repo =>{
-        return (
-          <li key={repo.full_name}>
-            <strong>{repo.full_name}</strong>
-            <p>{repo.description}</p>
-          </li>
-        )
-      })}
-    </ul>
-  )
+  <div>
+    <h1>Hello World</h1>
+  </div>
+ )
 }
 
 
