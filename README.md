@@ -6,5 +6,6 @@ Listando meus projetos do github
 - HTML/CSS
 - Typescript
 - Vite
+- Axios
 
 ## Consumindo api do github com axios
